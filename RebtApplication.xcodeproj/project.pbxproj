@@ -1,0 +1,301 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A54029FB16268E6E00ED2FDD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A54029FA16268E6E00ED2FDD /* UIKit.framework */; };
+		A54029FD16268E6E00ED2FDD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A54029FC16268E6E00ED2FDD /* Foundation.framework */; };
+		A54029FF16268E6E00ED2FDD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A54029FE16268E6E00ED2FDD /* CoreGraphics.framework */; };
+		A5402A0116268E6E00ED2FDD /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5402A0016268E6E00ED2FDD /* CoreData.framework */; };
+		A5402A0716268E6E00ED2FDD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A5402A0516268E6E00ED2FDD /* InfoPlist.strings */; };
+		A5402A0916268E6E00ED2FDD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A5402A0816268E6E00ED2FDD /* main.m */; };
+		A5402A0D16268E6E00ED2FDD /* RebtApplicationAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A5402A0C16268E6E00ED2FDD /* RebtApplicationAppDelegate.m */; };
+		A5402A0F16268E6F00ED2FDD /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = A5402A0E16268E6F00ED2FDD /* Default.png */; };
+		A5402A1116268E6F00ED2FDD /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A5402A1016268E6F00ED2FDD /* Default@2x.png */; };
+		A5402A1316268E6F00ED2FDD /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A5402A1216268E6F00ED2FDD /* Default-568h@2x.png */; };
+		A5402A1616268E6F00ED2FDD /* RebtApplication.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A5402A1416268E6F00ED2FDD /* RebtApplication.xcdatamodeld */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A54029F616268E6E00ED2FDD /* RebtApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RebtApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A54029FA16268E6E00ED2FDD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A54029FC16268E6E00ED2FDD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A54029FE16268E6E00ED2FDD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A5402A0016268E6E00ED2FDD /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		A5402A0416268E6E00ED2FDD /* RebtApplication-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RebtApplication-Info.plist"; sourceTree = "<group>"; };
+		A5402A0616268E6E00ED2FDD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A5402A0816268E6E00ED2FDD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A5402A0A16268E6E00ED2FDD /* RebtApplication-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RebtApplication-Prefix.pch"; sourceTree = "<group>"; };
+		A5402A0B16268E6E00ED2FDD /* RebtApplicationAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RebtApplicationAppDelegate.h; sourceTree = "<group>"; };
+		A5402A0C16268E6E00ED2FDD /* RebtApplicationAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RebtApplicationAppDelegate.m; sourceTree = "<group>"; };
+		A5402A0E16268E6F00ED2FDD /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		A5402A1016268E6F00ED2FDD /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		A5402A1216268E6F00ED2FDD /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		A5402A1516268E6F00ED2FDD /* RebtApplication.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RebtApplication.xcdatamodel; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A54029F316268E6E00ED2FDD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A54029FB16268E6E00ED2FDD /* UIKit.framework in Frameworks */,
+				A54029FD16268E6E00ED2FDD /* Foundation.framework in Frameworks */,
+				A54029FF16268E6E00ED2FDD /* CoreGraphics.framework in Frameworks */,
+				A5402A0116268E6E00ED2FDD /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A54029EB16268E6E00ED2FDD = {
+			isa = PBXGroup;
+			children = (
+				A5402A0216268E6E00ED2FDD /* RebtApplication */,
+				A54029F916268E6E00ED2FDD /* Frameworks */,
+				A54029F716268E6E00ED2FDD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A54029F716268E6E00ED2FDD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A54029F616268E6E00ED2FDD /* RebtApplication.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A54029F916268E6E00ED2FDD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A54029FA16268E6E00ED2FDD /* UIKit.framework */,
+				A54029FC16268E6E00ED2FDD /* Foundation.framework */,
+				A54029FE16268E6E00ED2FDD /* CoreGraphics.framework */,
+				A5402A0016268E6E00ED2FDD /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A5402A0216268E6E00ED2FDD /* RebtApplication */ = {
+			isa = PBXGroup;
+			children = (
+				A5402A0B16268E6E00ED2FDD /* RebtApplicationAppDelegate.h */,
+				A5402A0C16268E6E00ED2FDD /* RebtApplicationAppDelegate.m */,
+				A5402A1416268E6F00ED2FDD /* RebtApplication.xcdatamodeld */,
+				A5402A0316268E6E00ED2FDD /* Supporting Files */,
+			);
+			path = RebtApplication;
+			sourceTree = "<group>";
+		};
+		A5402A0316268E6E00ED2FDD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A5402A0416268E6E00ED2FDD /* RebtApplication-Info.plist */,
+				A5402A0516268E6E00ED2FDD /* InfoPlist.strings */,
+				A5402A0816268E6E00ED2FDD /* main.m */,
+				A5402A0A16268E6E00ED2FDD /* RebtApplication-Prefix.pch */,
+				A5402A0E16268E6F00ED2FDD /* Default.png */,
+				A5402A1016268E6F00ED2FDD /* Default@2x.png */,
+				A5402A1216268E6F00ED2FDD /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A54029F516268E6E00ED2FDD /* RebtApplication */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5402A1916268E6F00ED2FDD /* Build configuration list for PBXNativeTarget "RebtApplication" */;
+			buildPhases = (
+				A54029F216268E6E00ED2FDD /* Sources */,
+				A54029F316268E6E00ED2FDD /* Frameworks */,
+				A54029F416268E6E00ED2FDD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RebtApplication;
+			productName = RebtApplication;
+			productReference = A54029F616268E6E00ED2FDD /* RebtApplication.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A54029ED16268E6E00ED2FDD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = RebtApplication;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Material-Tokorozawa";
+			};
+			buildConfigurationList = A54029F016268E6E00ED2FDD /* Build configuration list for PBXProject "RebtApplication" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A54029EB16268E6E00ED2FDD;
+			productRefGroup = A54029F716268E6E00ED2FDD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A54029F516268E6E00ED2FDD /* RebtApplication */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A54029F416268E6E00ED2FDD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5402A0716268E6E00ED2FDD /* InfoPlist.strings in Resources */,
+				A5402A0F16268E6F00ED2FDD /* Default.png in Resources */,
+				A5402A1116268E6F00ED2FDD /* Default@2x.png in Resources */,
+				A5402A1316268E6F00ED2FDD /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A54029F216268E6E00ED2FDD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5402A0916268E6E00ED2FDD /* main.m in Sources */,
+				A5402A0D16268E6E00ED2FDD /* RebtApplicationAppDelegate.m in Sources */,
+				A5402A1616268E6F00ED2FDD /* RebtApplication.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A5402A0516268E6E00ED2FDD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5402A0616268E6E00ED2FDD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A5402A1716268E6F00ED2FDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A5402A1816268E6F00ED2FDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A5402A1A16268E6F00ED2FDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RebtApplication/RebtApplication-Prefix.pch";
+				INFOPLIST_FILE = "RebtApplication/RebtApplication-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A5402A1B16268E6F00ED2FDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RebtApplication/RebtApplication-Prefix.pch";
+				INFOPLIST_FILE = "RebtApplication/RebtApplication-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A54029F016268E6E00ED2FDD /* Build configuration list for PBXProject "RebtApplication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5402A1716268E6F00ED2FDD /* Debug */,
+				A5402A1816268E6F00ED2FDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5402A1916268E6F00ED2FDD /* Build configuration list for PBXNativeTarget "RebtApplication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5402A1A16268E6F00ED2FDD /* Debug */,
+				A5402A1B16268E6F00ED2FDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A5402A1416268E6F00ED2FDD /* RebtApplication.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A5402A1516268E6F00ED2FDD /* RebtApplication.xcdatamodel */,
+			);
+			currentVersion = A5402A1516268E6F00ED2FDD /* RebtApplication.xcdatamodel */;
+			path = RebtApplication.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A54029ED16268E6E00ED2FDD /* Project object */;
+}
