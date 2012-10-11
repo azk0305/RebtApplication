@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2843" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="M3G-n5-jyy">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1929"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="yvf-Xx-iUi">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="M3G-n5-jyy" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5d8-4F-gfu">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Rco-3S-0Dl" kind="relationship" relationship="rootViewController" id="y4T-X3-Eoz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RIG-YO-UFl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-255" y="-39"/>
+        </scene>
+        <!--Top Page View Controller - ようこそ-->
+        <scene sceneID="mPX-Hp-d7K">
+            <objects>
+                <viewController id="Rco-3S-0Dl" customClass="TopPageViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rF2-ha-4Ca">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EiC-up-E4T">
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y5i-G1-4GB">
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="コラム">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="T0K-BL-nIw" kind="push" id="xkx-lx-kaR"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="y5i-G1-4GB" firstAttribute="leading" secondItem="EiC-up-E4T" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="B1M-sr-6ab"/>
+                                    <constraint firstAttribute="bottom" secondItem="y5i-G1-4GB" secondAttribute="bottom" constant="105" id="QiM-qN-AW7"/>
+                                    <constraint firstAttribute="trailing" secondItem="y5i-G1-4GB" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="X9Z-dI-xj7"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="EiC-up-E4T" firstAttribute="top" secondItem="rF2-ha-4Ca" secondAttribute="top" type="default" id="5j4-vL-Ptx"/>
+                            <constraint firstItem="EiC-up-E4T" firstAttribute="trailing" secondItem="rF2-ha-4Ca" secondAttribute="trailing" type="default" id="KDj-ac-iZk"/>
+                            <constraint firstAttribute="bottom" secondItem="EiC-up-E4T" secondAttribute="bottom" constant="50" type="user" id="VJa-nK-Nap"/>
+                            <constraint firstItem="EiC-up-E4T" firstAttribute="leading" secondItem="rF2-ha-4Ca" secondAttribute="leading" type="default" id="z2G-4V-IBW"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="ようこそ" id="OGb-jv-qlm"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sPj-tS-Gj4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="176" y="-39"/>
+        </scene>
+        <!--Column List Page View Controller - コラム一覧-->
+        <scene sceneID="oLv-t8-P65">
+            <objects>
+                <viewController id="T0K-BL-nIw" customClass="ColumnListPageViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ChK-HZ-qvg">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3gv-yl-DDA">
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n3B-R1-gJc">
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="コラムを読む">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="l0k-7O-Dug" kind="push" id="q8g-bB-YlA"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="n3B-R1-gJc" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="091-o6-REK"/>
+                                    <constraint firstItem="n3B-R1-gJc" firstAttribute="leading" secondItem="3gv-yl-DDA" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="2C6-TO-S2V"/>
+                                    <constraint firstItem="n3B-R1-gJc" firstAttribute="top" secondItem="3gv-yl-DDA" secondAttribute="top" constant="104" id="GD9-FO-IjD"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3gv-yl-DDA" firstAttribute="leading" secondItem="ChK-HZ-qvg" secondAttribute="leading" type="default" id="7E7-9e-zbY"/>
+                            <constraint firstItem="3gv-yl-DDA" firstAttribute="top" secondItem="ChK-HZ-qvg" secondAttribute="top" type="default" id="Gcd-as-qGB"/>
+                            <constraint firstAttribute="bottom" secondItem="3gv-yl-DDA" secondAttribute="bottom" constant="50" type="user" id="T4M-Aa-cJh"/>
+                            <constraint firstItem="3gv-yl-DDA" firstAttribute="trailing" secondItem="ChK-HZ-qvg" secondAttribute="trailing" type="default" id="Vck-h9-686"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="コラム一覧" id="Av6-85-xkV"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ITH-NZ-Q5B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="518" y="598"/>
+        </scene>
+        <!--Column Page View Controller - コラム-->
+        <scene sceneID="jFA-Xl-8ua">
+            <objects>
+                <viewController id="l0k-7O-Dug" customClass="ColumnPageViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ug6-FU-mZY">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Fd-nY-Zml">
+                                <subviews>
+                                    <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Crh-hI-7QC">
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </webView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="Crh-hI-7QC" firstAttribute="trailing" secondItem="7Fd-nY-Zml" secondAttribute="trailing" type="default" id="JIu-MD-DPB"/>
+                                    <constraint firstItem="Crh-hI-7QC" firstAttribute="top" secondItem="7Fd-nY-Zml" secondAttribute="top" type="default" id="Smk-Rc-dy6"/>
+                                    <constraint firstItem="Crh-hI-7QC" firstAttribute="leading" secondItem="7Fd-nY-Zml" secondAttribute="leading" type="default" id="Ugw-zX-xad"/>
+                                    <constraint firstItem="Crh-hI-7QC" firstAttribute="bottom" secondItem="7Fd-nY-Zml" secondAttribute="bottom" type="default" id="yQv-yC-6fb"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7Fd-nY-Zml" firstAttribute="trailing" secondItem="Ug6-FU-mZY" secondAttribute="trailing" type="default" id="Ndt-P7-TJs"/>
+                            <constraint firstAttribute="bottom" secondItem="7Fd-nY-Zml" secondAttribute="bottom" constant="50" type="user" id="Uxa-CK-0yj"/>
+                            <constraint firstItem="7Fd-nY-Zml" firstAttribute="leading" secondItem="Ug6-FU-mZY" secondAttribute="leading" type="default" id="dAN-xT-vSQ"/>
+                            <constraint firstItem="7Fd-nY-Zml" firstAttribute="top" secondItem="Ug6-FU-mZY" secondAttribute="top" type="default" id="fQ6-He-htR"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="コラム" id="LTt-hU-GdL"/>
+                    <connections>
+                        <outlet property="columWebView" destination="Crh-hI-7QC" id="RFe-2H-UVp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DKY-cS-R0K" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="866" y="598"/>
+        </scene>
+    </scenes>
+    <classes>
+        <class className="ColumnListPageViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ColumnListPageViewController.h"/>
+        </class>
+        <class className="ColumnPageViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ColumnPageViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="columWebView" candidateClass="UIWebView"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="TopPageViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TopPageViewController.h"/>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

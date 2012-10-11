@@ -18,6 +18,12 @@
 		A5402A1116268E6F00ED2FDD /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A5402A1016268E6F00ED2FDD /* Default@2x.png */; };
 		A5402A1316268E6F00ED2FDD /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A5402A1216268E6F00ED2FDD /* Default-568h@2x.png */; };
 		A5402A1616268E6F00ED2FDD /* RebtApplication.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A5402A1416268E6F00ED2FDD /* RebtApplication.xcdatamodeld */; };
+		A5402A1D16268EB900ED2FDD /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5402A1C16268EB900ED2FDD /* MainStoryboard.storyboard */; };
+		A5402A20162691B700ED2FDD /* TopPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5402A1F162691B700ED2FDD /* TopPageViewController.m */; };
+		A5402A271626970700ED2FDD /* ColumnPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5402A261626970700ED2FDD /* ColumnPageViewController.m */; };
+		A5402A2916269A8C00ED2FDD /* column1.html in Resources */ = {isa = PBXBuildFile; fileRef = A5402A2816269A8C00ED2FDD /* column1.html */; };
+		A5402A2F16269CEE00ED2FDD /* ColumnListPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5402A2E16269CEE00ED2FDD /* ColumnListPageViewController.m */; };
+		A5402A321626A69700ED2FDD /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5402A301626A68F00ED2FDD /* iAd.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +42,15 @@
 		A5402A1016268E6F00ED2FDD /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		A5402A1216268E6F00ED2FDD /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		A5402A1516268E6F00ED2FDD /* RebtApplication.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RebtApplication.xcdatamodel; sourceTree = "<group>"; };
+		A5402A1C16268EB900ED2FDD /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = MainStoryboard.storyboard; path = ../MainStoryboard.storyboard; sourceTree = "<group>"; };
+		A5402A1E162691B700ED2FDD /* TopPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopPageViewController.h; sourceTree = "<group>"; };
+		A5402A1F162691B700ED2FDD /* TopPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopPageViewController.m; sourceTree = "<group>"; };
+		A5402A251626970700ED2FDD /* ColumnPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ColumnPageViewController.h; path = ../ColumnPageViewController.h; sourceTree = "<group>"; };
+		A5402A261626970700ED2FDD /* ColumnPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ColumnPageViewController.m; path = ../ColumnPageViewController.m; sourceTree = "<group>"; };
+		A5402A2816269A8C00ED2FDD /* column1.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = column1.html; path = ../column1.html; sourceTree = "<group>"; };
+		A5402A2D16269CEE00ED2FDD /* ColumnListPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ColumnListPageViewController.h; path = ../ColumnListPageViewController.h; sourceTree = "<group>"; };
+		A5402A2E16269CEE00ED2FDD /* ColumnListPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ColumnListPageViewController.m; path = ../ColumnListPageViewController.m; sourceTree = "<group>"; };
+		A5402A301626A68F00ED2FDD /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +62,7 @@
 				A54029FD16268E6E00ED2FDD /* Foundation.framework in Frameworks */,
 				A54029FF16268E6E00ED2FDD /* CoreGraphics.framework in Frameworks */,
 				A5402A0116268E6E00ED2FDD /* CoreData.framework in Frameworks */,
+				A5402A321626A69700ED2FDD /* iAd.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +89,7 @@
 		A54029F916268E6E00ED2FDD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A5402A301626A68F00ED2FDD /* iAd.framework */,
 				A54029FA16268E6E00ED2FDD /* UIKit.framework */,
 				A54029FC16268E6E00ED2FDD /* Foundation.framework */,
 				A54029FE16268E6E00ED2FDD /* CoreGraphics.framework */,
@@ -86,8 +103,16 @@
 			children = (
 				A5402A0B16268E6E00ED2FDD /* RebtApplicationAppDelegate.h */,
 				A5402A0C16268E6E00ED2FDD /* RebtApplicationAppDelegate.m */,
+				A5402A1C16268EB900ED2FDD /* MainStoryboard.storyboard */,
 				A5402A1416268E6F00ED2FDD /* RebtApplication.xcdatamodeld */,
 				A5402A0316268E6E00ED2FDD /* Supporting Files */,
+				A5402A1E162691B700ED2FDD /* TopPageViewController.h */,
+				A5402A1F162691B700ED2FDD /* TopPageViewController.m */,
+				A5402A2D16269CEE00ED2FDD /* ColumnListPageViewController.h */,
+				A5402A2E16269CEE00ED2FDD /* ColumnListPageViewController.m */,
+				A5402A251626970700ED2FDD /* ColumnPageViewController.h */,
+				A5402A261626970700ED2FDD /* ColumnPageViewController.m */,
+				A5402A2816269A8C00ED2FDD /* column1.html */,
 			);
 			path = RebtApplication;
 			sourceTree = "<group>";
@@ -162,6 +187,8 @@
 				A5402A0F16268E6F00ED2FDD /* Default.png in Resources */,
 				A5402A1116268E6F00ED2FDD /* Default@2x.png in Resources */,
 				A5402A1316268E6F00ED2FDD /* Default-568h@2x.png in Resources */,
+				A5402A1D16268EB900ED2FDD /* MainStoryboard.storyboard in Resources */,
+				A5402A2916269A8C00ED2FDD /* column1.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,6 +202,9 @@
 				A5402A0916268E6E00ED2FDD /* main.m in Sources */,
 				A5402A0D16268E6E00ED2FDD /* RebtApplicationAppDelegate.m in Sources */,
 				A5402A1616268E6F00ED2FDD /* RebtApplication.xcdatamodeld in Sources */,
+				A5402A20162691B700ED2FDD /* TopPageViewController.m in Sources */,
+				A5402A271626970700ED2FDD /* ColumnPageViewController.m in Sources */,
+				A5402A2F16269CEE00ED2FDD /* ColumnListPageViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

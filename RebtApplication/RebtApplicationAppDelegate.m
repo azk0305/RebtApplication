@@ -8,6 +8,8 @@
 
 #import "RebtApplicationAppDelegate.h"
 
+#import "TopPageViewController.h"
+
 @implementation RebtApplicationAppDelegate
 
 - (void)dealloc
@@ -25,10 +27,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
+    //self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
+    
     // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
+    //UINavigationController *navigationController = (UINavigationController *)self.window.rootViewController;
+    //TopPageViewController *controller = (TopPageViewController *)navigationController.topViewController;
+    
+    //self.window.backgroundColor = [UIColor whiteColor];
+    //[self.window makeKeyAndVisible];
     return YES;
 }
 
