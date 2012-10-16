@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ColumnListPageViewController : UIViewController
+@interface ColumnListPageViewController : UIViewController<UIPickerViewDataSource, UIPickerViewDelegate> {
+    
+}
+@property (retain, nonatomic) IBOutlet UIPickerView *pickerView;
 
 @end

@@ -14,6 +14,8 @@
 
 @implementation ColumnPageViewController
 
+@synthesize selectedColumnNumber;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -27,7 +29,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"column1" ofType:@"html" inDirectory:NO];
+    NSString *path = [[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"%@%@", @"column", selectedColumnNumber] ofType:@"html" inDirectory:NO];
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL fileURLWithPath:path]];
     [self.columWebView loadRequest:request];
 }
@@ -40,6 +42,7 @@
 
 - (void)dealloc {
     [_columWebView release];
+    [selectedColumnNumber release];
     [super dealloc];
 }
 @end

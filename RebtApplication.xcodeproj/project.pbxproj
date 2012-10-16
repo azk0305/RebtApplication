@@ -33,7 +33,6 @@
 		A54029FE16268E6E00ED2FDD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		A5402A0016268E6E00ED2FDD /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		A5402A0416268E6E00ED2FDD /* RebtApplication-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RebtApplication-Info.plist"; sourceTree = "<group>"; };
-		A5402A0616268E6E00ED2FDD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A5402A0816268E6E00ED2FDD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A5402A0A16268E6E00ED2FDD /* RebtApplication-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RebtApplication-Prefix.pch"; sourceTree = "<group>"; };
 		A5402A0B16268E6E00ED2FDD /* RebtApplicationAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RebtApplicationAppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +50,7 @@
 		A5402A2D16269CEE00ED2FDD /* ColumnListPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ColumnListPageViewController.h; path = ../ColumnListPageViewController.h; sourceTree = "<group>"; };
 		A5402A2E16269CEE00ED2FDD /* ColumnListPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ColumnListPageViewController.m; path = ../ColumnListPageViewController.m; sourceTree = "<group>"; };
 		A5402A301626A68F00ED2FDD /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		A59CD20B162E1C3700025B36 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +167,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				ja,
 			);
 			mainGroup = A54029EB16268E6E00ED2FDD;
 			productRefGroup = A54029F716268E6E00ED2FDD /* Products */;
@@ -214,7 +215,7 @@
 		A5402A0516268E6E00ED2FDD /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A5402A0616268E6E00ED2FDD /* en */,
+				A59CD20B162E1C3700025B36 /* ja */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -311,6 +312,7 @@
 				A5402A1B16268E6F00ED2FDD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

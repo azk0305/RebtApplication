@@ -24,7 +24,7 @@
             <objects>
                 <viewController id="Rco-3S-0Dl" customClass="TopPageViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rF2-ha-4Ca">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EiC-up-E4T">
@@ -70,7 +70,7 @@
             <objects>
                 <viewController id="T0K-BL-nIw" customClass="ColumnListPageViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ChK-HZ-qvg">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3gv-yl-DDA">
@@ -85,15 +85,28 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <segue destination="l0k-7O-Dug" kind="push" id="q8g-bB-YlA"/>
+                                            <action selector="rcButtonClicked:" destination="T0K-BL-nIw" eventType="touchUpInside" id="1KV-e8-Dwq"/>
+                                            <segue destination="l0k-7O-Dug" kind="push" identifier="readColumn" id="q8g-bB-YlA"/>
                                         </connections>
                                     </button>
+                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d3O-Rx-BTJ">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="216" id="5jN-29-uGb"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="dataSource" destination="T0K-BL-nIw" id="Ype-RK-Wri"/>
+                                            <outlet property="delegate" destination="T0K-BL-nIw" id="lJc-vk-wyd"/>
+                                        </connections>
+                                    </pickerView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="n3B-R1-gJc" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="091-o6-REK"/>
                                     <constraint firstItem="n3B-R1-gJc" firstAttribute="leading" secondItem="3gv-yl-DDA" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="2C6-TO-S2V"/>
-                                    <constraint firstItem="n3B-R1-gJc" firstAttribute="top" secondItem="3gv-yl-DDA" secondAttribute="top" constant="104" id="GD9-FO-IjD"/>
+                                    <constraint firstItem="n3B-R1-gJc" firstAttribute="top" secondItem="3gv-yl-DDA" secondAttribute="top" constant="45" id="2Vh-Ua-Lrb"/>
+                                    <constraint firstItem="d3O-Rx-BTJ" firstAttribute="bottom" secondItem="3gv-yl-DDA" secondAttribute="bottom" type="default" id="SBC-0e-iMD"/>
+                                    <constraint firstItem="d3O-Rx-BTJ" firstAttribute="leading" secondItem="3gv-yl-DDA" secondAttribute="leading" type="default" id="VSX-hR-hWE"/>
+                                    <constraint firstItem="d3O-Rx-BTJ" firstAttribute="trailing" secondItem="3gv-yl-DDA" secondAttribute="trailing" type="default" id="zr7-C7-aBo"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -106,6 +119,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="コラム一覧" id="Av6-85-xkV"/>
+                    <connections>
+                        <outlet property="pickerView" destination="d3O-Rx-BTJ" id="3KU-Lt-vod"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ITH-NZ-Q5B" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -116,7 +132,7 @@
             <objects>
                 <viewController id="l0k-7O-Dug" customClass="ColumnPageViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ug6-FU-mZY">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Fd-nY-Zml">
@@ -155,6 +171,9 @@
     <classes>
         <class className="ColumnListPageViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ColumnListPageViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="pickerView" candidateClass="UIPickerView"/>
+            </relationships>
         </class>
         <class className="ColumnPageViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ColumnPageViewController.h"/>
@@ -172,6 +191,6 @@
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
 </document>

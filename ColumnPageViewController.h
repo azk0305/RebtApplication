@@ -10,5 +10,6 @@
 
 @interface ColumnPageViewController : UIViewController
 @property (retain, nonatomic) IBOutlet UIWebView *columWebView;
+@property (retain, nonatomic) NSString *selectedColumnNumber;
 
 @end
