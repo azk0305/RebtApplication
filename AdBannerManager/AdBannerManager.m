@@ -145,7 +145,7 @@ static id instance = nil;
 
     // 初回表示
     // iAd表示中かつビューが入れ替わった時
-    // nend表示中かつビューが入れ替わったとき
+    // nend表示中かつビューが入れ替わった時
     if (![viewCtr isEqual:self.currentRootViewCtr]) {
         
         self.currentRootViewCtr = viewCtr;

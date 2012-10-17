@@ -28,13 +28,13 @@
     [super viewDidLoad];
     
 	// Do any additional setup after loading the view.
-/*
-    adView = [[ADBannerView alloc] initWithFrame:CGRectZero];
-    
+    CGFloat bannerHeight = 50;
     CGFloat viewHeight = self.view.frame.size.height;
     CGFloat navHeight = [[[self navigationController] rotatingHeaderView] frame].size.height;
-    CGFloat adHeight = adView.frame.size.height;
-    CGFloat adPosY = viewHeight - navHeight;
+    CGFloat adPosY = viewHeight - navHeight - bannerHeight;
+    [[AdBannerManager sharedInstance] showAdBannerForRootViewCtr:self posY:adPosY];
+/*
+    adView = [[ADBannerView alloc] initWithFrame:CGRectZero];
     
     adView.frame = CGRectOffset(adView.frame, 0, adPosY);
     
