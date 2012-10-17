@@ -32,13 +32,18 @@
     NSString *path = [[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"%@%@", @"column", selectedColumnNumber] ofType:@"html" inDirectory:NO];
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL fileURLWithPath:path]];
     [self.columWebView loadRequest:request];
-    
+}
+
+- (void) viewWillAppear:(BOOL)animated {
 	// AD Banner View.
     CGFloat bannerHeight = 50;
     CGFloat viewHeight = self.view.frame.size.height;
-    CGFloat navHeight = [[[self navigationController] rotatingHeaderView] frame].size.height;
-    CGFloat adPosY = viewHeight - navHeight - bannerHeight;
+    //CGFloat navHeight = [[[self navigationController] rotatingHeaderView] frame].size.height;
+    //CGFloat adPosY = viewHeight - navHeight - bannerHeight;
+    CGFloat adPosY = viewHeight - bannerHeight;
     [[AdBannerManager sharedInstance] showAdBannerForRootViewCtr:self posY:adPosY];
+    
+    [super viewWillAppear:YES];
 }
 
 - (void)didReceiveMemoryWarning

@@ -33,7 +33,7 @@
                             </tableViewSection>
                             <tableViewSection headerTitle="【A】どのような出来事がありましたか？（例：電車で子供が騒いでいた）" id="UNO-QA-jpP">
                                 <cells>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ACell" id="T5o-kx-vml">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ACell" id="T5o-kx-vml">
                                         <rect key="frame" x="0.0" y="155" width="320" height="46"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -61,7 +61,7 @@
                             </tableViewSection>
                             <tableViewSection headerTitle="【C】Aの出来事に対して、どのような感情が沸きましたか？（例：イライラした）" id="n5e-q6-b3p">
                                 <cells>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CCell" id="NhT-tg-oAB">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CCell" id="NhT-tg-oAB">
                                         <rect key="frame" x="0.0" y="289" width="320" height="46"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -89,7 +89,7 @@
                             </tableViewSection>
                             <tableViewSection headerTitle="【B】Cのように感じた理由を考えてみましょう。（例：電車内では静かにしているべきだから）" id="yX7-nL-ZKh">
                                 <cells>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="BCell" id="KAM-m1-qTo">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="BCell" id="KAM-m1-qTo">
                                         <rect key="frame" x="0.0" y="423" width="320" height="46"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -117,7 +117,7 @@
                             </tableViewSection>
                             <tableViewSection headerTitle="【D】Bで書いた理由に反論してみましょう。（例：子供はうるさいものだから仕方ない。元気な方がかわいい。）" id="tqD-77-GPq">
                                 <cells>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="DCell" id="TYG-6r-LAm">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="DCell" id="TYG-6r-LAm">
                                         <rect key="frame" x="0.0" y="578" width="320" height="46"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -145,7 +145,7 @@
                             </tableViewSection>
                             <tableViewSection headerTitle="【E】Dで反論をした結果、気持ちはどうなりましたか？（例：イライラが治まった）" id="tbC-xv-7OY">
                                 <cells>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ECell" id="0Mj-14-u1D">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ECell" id="0Mj-14-u1D">
                                         <rect key="frame" x="0.0" y="712" width="320" height="46"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -476,7 +476,7 @@
                             </tableViewSection>
                             <tableViewSection headerTitle="【A】どのような出来事がありましたか？（例：電車で子供が騒いでいた）" id="x3a-ZB-M4H">
                                 <cells>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ACell" id="CcB-I2-CfJ">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ACell" id="CcB-I2-CfJ">
                                         <rect key="frame" x="0.0" y="155" width="320" height="46"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -504,7 +504,7 @@
                             </tableViewSection>
                             <tableViewSection headerTitle="【C】Aの出来事に対して、どのような感情が沸きましたか？（例：イライラした）" id="0b7-PH-l2E">
                                 <cells>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CCell" id="efI-Sb-ZKh">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CCell" id="efI-Sb-ZKh">
                                         <rect key="frame" x="0.0" y="289" width="320" height="46"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -532,7 +532,7 @@
                             </tableViewSection>
                             <tableViewSection headerTitle="【B】Cのように感じた理由を考えてみましょう。（例：電車内では静かにしているべきだから）" id="oYq-OK-ybG">
                                 <cells>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="BCell" id="Zmh-ts-sQu">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="BCell" id="Zmh-ts-sQu">
                                         <rect key="frame" x="0.0" y="423" width="320" height="46"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -560,7 +560,7 @@
                             </tableViewSection>
                             <tableViewSection headerTitle="【D】Bで書いた理由に反論してみましょう。（例：子供はうるさいものだから仕方ない。元気な方がかわいい。）" id="Erw-OA-nBS">
                                 <cells>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="DCell" id="ARU-1i-aeI">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="DCell" id="ARU-1i-aeI">
                                         <rect key="frame" x="0.0" y="578" width="320" height="46"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -588,7 +588,7 @@
                             </tableViewSection>
                             <tableViewSection headerTitle="【E】Dで反論をした結果、気持ちはどうなりましたか？（例：イライラが治まった）" id="XhP-E1-fLJ">
                                 <cells>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ECell" id="025-Av-vK7">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ECell" id="025-Av-vK7">
                                         <rect key="frame" x="0.0" y="712" width="320" height="46"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
