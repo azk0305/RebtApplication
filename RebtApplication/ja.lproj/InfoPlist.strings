@@ -1,2 +1,3 @@
 /* Localized versions of Info.plist keys */
-
+CFBundleName = "論理療法";
+CFBundleDisplayName = "論理療法";
