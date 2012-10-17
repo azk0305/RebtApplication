@@ -30,6 +30,7 @@
 		A59CD21D162EA1D100025B36 /* libNendAd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A59CD21A162EA1D100025B36 /* libNendAd.a */; };
 		A59CD220162EA1FE00025B36 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A59CD21F162EA1FE00025B36 /* Security.framework */; };
 		A59CD224162EA8BE00025B36 /* AdBannerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A59CD223162EA8BE00025B36 /* AdBannerManager.m */; };
+		A59CD22A162EB61000025B36 /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A59CD229162EB61000025B36 /* InfoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +70,8 @@
 		A59CD21F162EA1FE00025B36 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		A59CD222162EA8BE00025B36 /* AdBannerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdBannerManager.h; sourceTree = "<group>"; };
 		A59CD223162EA8BE00025B36 /* AdBannerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdBannerManager.m; sourceTree = "<group>"; };
+		A59CD228162EB61000025B36 /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
+		A59CD229162EB61000025B36 /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +144,8 @@
 				A59CD214162E654D00025B36 /* ItemListViewController.m */,
 				A59CD216162E8D5A00025B36 /* EditItemViewController.h */,
 				A59CD217162E8D5A00025B36 /* EditItemViewController.m */,
+				A59CD228162EB61000025B36 /* InfoViewController.h */,
+				A59CD229162EB61000025B36 /* InfoViewController.m */,
 				A5402A2816269A8C00ED2FDD /* column1.html */,
 			);
 			path = RebtApplication;
@@ -258,6 +263,7 @@
 				A59CD215162E654D00025B36 /* ItemListViewController.m in Sources */,
 				A59CD218162E8D5A00025B36 /* EditItemViewController.m in Sources */,
 				A59CD224162EA8BE00025B36 /* AdBannerManager.m in Sources */,
+				A59CD22A162EB61000025B36 /* InfoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

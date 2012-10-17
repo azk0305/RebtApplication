@@ -143,7 +143,7 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
-                            <tableViewSection headerTitle="【E】Dで反論をした結果、気持ちはどうなりましたか？（例：イライラが治まった）" footerTitle="入力、お疲れ様でした。AからEまで入力できましたら、「保存」ボタンを押して下さい。" id="tbC-xv-7OY">
+                            <tableViewSection headerTitle="【E】Dで反論をした結果、気持ちはどうなりましたか？（例：イライラが治まった）" id="tbC-xv-7OY">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ECell" id="0Mj-14-u1D">
                                         <rect key="frame" x="0.0" y="712" width="320" height="46"/>
@@ -334,10 +334,10 @@
             </objects>
             <point key="canvasLocation" x="518" y="5"/>
         </scene>
-        <!--View Controller - このアプリについて-->
+        <!--Info View Controller - このアプリについて-->
         <scene sceneID="azm-qG-m4D">
             <objects>
-                <viewController id="H7m-vk-hKr" sceneMemberID="viewController">
+                <viewController id="H7m-vk-hKr" customClass="InfoViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4xO-Fo-zzj">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -586,7 +586,7 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
-                            <tableViewSection headerTitle="【E】Dで反論をした結果、気持ちはどうなりましたか？（例：イライラが治まった）" footerTitle="入力、お疲れ様でした。AからEまで入力できましたら、「保存」ボタンを押して下さい。" id="XhP-E1-fLJ">
+                            <tableViewSection headerTitle="【E】Dで反論をした結果、気持ちはどうなりましたか？（例：イライラが治まった）" id="XhP-E1-fLJ">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ECell" id="025-Av-vK7">
                                         <rect key="frame" x="0.0" y="712" width="320" height="46"/>
@@ -672,6 +672,9 @@
                 <relationship kind="outlet" name="dCellTextView" candidateClass="UITextView"/>
                 <relationship kind="outlet" name="eCellTextView" candidateClass="UITextView"/>
             </relationships>
+        </class>
+        <class className="InfoViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/InfoViewController.h"/>
         </class>
         <class className="ItemListViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ItemListViewController.h"/>

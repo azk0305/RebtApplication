@@ -1,18 +1,18 @@
 //
-//  TopPageViewController.m
+//  InfoViewController.m
 //  RebtApplication
 //
-//  Created by 浅見 憲司 on 2012/10/11.
+//  Created by 浅見 憲司 on 2012/10/17.
 //  Copyright (c) 2012年 Material-Tokorozawa. All rights reserved.
 //
 
-#import "TopPageViewController.h"
+#import "InfoViewController.h"
 
-@interface TopPageViewController ()
+@interface InfoViewController ()
 
 @end
 
-@implementation TopPageViewController
+@implementation InfoViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -26,6 +26,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+	// Do any additional setup after loading the view.
     
 	// AD Banner View.
     CGFloat bannerHeight = 50;
@@ -39,10 +40,6 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
-- (void)dealloc {
-    [super dealloc];
 }
 
 @end

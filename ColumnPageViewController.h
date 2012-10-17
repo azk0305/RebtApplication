@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+#import "AdBannerManager.h"
+
 @interface ColumnPageViewController : UIViewController
 @property (retain, nonatomic) IBOutlet UIWebView *columWebView;
 @property (retain, nonatomic) NSString *selectedColumnNumber;

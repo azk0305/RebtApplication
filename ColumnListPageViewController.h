@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+#import "AdBannerManager.h"
+
 @interface ColumnListPageViewController : UIViewController<UIPickerViewDataSource, UIPickerViewDelegate> {
     
 }
