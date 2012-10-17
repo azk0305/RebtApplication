@@ -28,8 +28,8 @@
 		A59CD215162E654D00025B36 /* ItemListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A59CD214162E654D00025B36 /* ItemListViewController.m */; };
 		A59CD218162E8D5A00025B36 /* EditItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A59CD217162E8D5A00025B36 /* EditItemViewController.m */; };
 		A59CD21D162EA1D100025B36 /* libNendAd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A59CD21A162EA1D100025B36 /* libNendAd.a */; };
-		A59CD21E162EA1D100025B36 /* libNendAd_readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = A59CD21B162EA1D100025B36 /* libNendAd_readme.txt */; };
 		A59CD220162EA1FE00025B36 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A59CD21F162EA1FE00025B36 /* Security.framework */; };
+		A59CD224162EA8BE00025B36 /* AdBannerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A59CD223162EA8BE00025B36 /* AdBannerManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +67,8 @@
 		A59CD21B162EA1D100025B36 /* libNendAd_readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = libNendAd_readme.txt; sourceTree = "<group>"; };
 		A59CD21C162EA1D100025B36 /* NADView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NADView.h; sourceTree = "<group>"; };
 		A59CD21F162EA1FE00025B36 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		A59CD222162EA8BE00025B36 /* AdBannerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdBannerManager.h; sourceTree = "<group>"; };
+		A59CD223162EA8BE00025B36 /* AdBannerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdBannerManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,7 +92,7 @@
 		A54029EB16268E6E00ED2FDD = {
 			isa = PBXGroup;
 			children = (
-				A59CD21F162EA1FE00025B36 /* Security.framework */,
+				A59CD221162EA8BE00025B36 /* AdBannerManager */,
 				A59CD219162EA1D100025B36 /* NendAd */,
 				A5402A0216268E6E00ED2FDD /* RebtApplication */,
 				A54029F916268E6E00ED2FDD /* Frameworks */,
@@ -109,6 +111,7 @@
 		A54029F916268E6E00ED2FDD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A59CD21F162EA1FE00025B36 /* Security.framework */,
 				A5402A301626A68F00ED2FDD /* iAd.framework */,
 				A54029FA16268E6E00ED2FDD /* UIKit.framework */,
 				A54029FC16268E6E00ED2FDD /* Foundation.framework */,
@@ -165,6 +168,15 @@
 				A59CD21C162EA1D100025B36 /* NADView.h */,
 			);
 			path = NendAd;
+			sourceTree = "<group>";
+		};
+		A59CD221162EA8BE00025B36 /* AdBannerManager */ = {
+			isa = PBXGroup;
+			children = (
+				A59CD222162EA8BE00025B36 /* AdBannerManager.h */,
+				A59CD223162EA8BE00025B36 /* AdBannerManager.m */,
+			);
+			path = AdBannerManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,7 +238,6 @@
 				A5402A1316268E6F00ED2FDD /* Default-568h@2x.png in Resources */,
 				A5402A1D16268EB900ED2FDD /* MainStoryboard.storyboard in Resources */,
 				A5402A2916269A8C00ED2FDD /* column1.html in Resources */,
-				A59CD21E162EA1D100025B36 /* libNendAd_readme.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,6 +257,7 @@
 				A59CD20E162E392F00025B36 /* AddItemViewController.m in Sources */,
 				A59CD215162E654D00025B36 /* ItemListViewController.m in Sources */,
 				A59CD218162E8D5A00025B36 /* EditItemViewController.m in Sources */,
+				A59CD224162EA8BE00025B36 /* AdBannerManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

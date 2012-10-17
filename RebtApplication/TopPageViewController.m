@@ -14,9 +14,6 @@
 
 @implementation TopPageViewController
 
-@synthesize iAdBannerIsVisible;
-@synthesize nandBannerIsVisible;
-
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -67,9 +64,5 @@
 {
 }
 */
-
--(void)nadViewDidFinishLoad:(NADView *)adView {
-    NSLog(@"delegate nadViewDidFinishLoad:");
-}
 
 @end
