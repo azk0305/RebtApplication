@@ -17,21 +17,198 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RIG-YO-UFl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-255" y="-39"/>
+            <point key="canvasLocation" x="-234" y="5"/>
+        </scene>
+        <!--Add Item View Controller - 新しい記録-->
+        <scene sceneID="AKi-79-47K">
+            <objects>
+                <tableViewController id="ar3-r7-yOE" customClass="AddItemViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="drG-5u-hh6">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <sections>
+                            <tableViewSection headerTitle="AからEまで入力後、「保存」ボタンを押して下さい。" id="Gco-JE-Rvg">
+                                <cells/>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="【A】どのような出来事がありましたか？（例：電車で子供が騒いでいた）" id="UNO-QA-jpP">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ACell" id="T5o-kx-vml">
+                                        <rect key="frame" x="0.0" y="155" width="320" height="46"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="10" y="1" width="300" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="ACell" translatesAutoresizingMaskIntoConstraints="NO" id="S2c-It-C6p">
+                                                    <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="289" id="6E9-vr-Q4i"/>
+                                                        <constraint firstAttribute="height" constant="32" id="Obt-B0-fOt"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="S2c-It-C6p" firstAttribute="top" secondItem="T5o-kx-vml" secondAttribute="top" constant="6" id="3O0-18-iua"/>
+                                            <constraint firstItem="S2c-It-C6p" firstAttribute="centerX" secondItem="T5o-kx-vml" secondAttribute="centerX" type="default" id="syO-C9-hCZ"/>
+                                        </constraints>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="【C】Aの出来事に対して、どのような感情が沸きましたか？（例：イライラした）" id="n5e-q6-b3p">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CCell" id="NhT-tg-oAB">
+                                        <rect key="frame" x="0.0" y="289" width="320" height="46"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="10" y="1" width="300" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="CCell" translatesAutoresizingMaskIntoConstraints="NO" id="dLf-74-uIa">
+                                                    <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="32" id="EAj-i1-SYI"/>
+                                                        <constraint firstAttribute="width" constant="289" id="ck5-dz-ebh"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="dLf-74-uIa" firstAttribute="centerY" secondItem="NhT-tg-oAB" secondAttribute="centerY" type="default" id="9Cw-Pi-D2c"/>
+                                            <constraint firstItem="dLf-74-uIa" firstAttribute="centerX" secondItem="NhT-tg-oAB" secondAttribute="centerX" type="default" id="u2n-ly-9J9"/>
+                                        </constraints>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="【B】Cのように感じた理由を考えてみましょう。（例：電車内では静かにしているべきだから）" id="yX7-nL-ZKh">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="BCell" id="KAM-m1-qTo">
+                                        <rect key="frame" x="0.0" y="423" width="320" height="46"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="10" y="1" width="300" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="BCell" translatesAutoresizingMaskIntoConstraints="NO" id="nCs-eE-O9c">
+                                                    <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="289" id="alc-yp-hIB"/>
+                                                        <constraint firstAttribute="height" constant="32" id="nTn-jK-4gb"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="nCs-eE-O9c" firstAttribute="centerY" secondItem="KAM-m1-qTo" secondAttribute="centerY" type="default" id="gWh-E3-fPR"/>
+                                            <constraint firstItem="nCs-eE-O9c" firstAttribute="centerX" secondItem="KAM-m1-qTo" secondAttribute="centerX" type="default" id="t8H-7V-RSC"/>
+                                        </constraints>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="【D】Bで書いた理由に反論してみましょう。（例：子供はうるさいものだから仕方ない。元気な方がかわいい。）" id="tqD-77-GPq">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="DCell" id="TYG-6r-LAm">
+                                        <rect key="frame" x="0.0" y="578" width="320" height="46"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="10" y="1" width="300" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="DCell" translatesAutoresizingMaskIntoConstraints="NO" id="0WJ-W3-Gwh">
+                                                    <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="32" id="4z4-iI-7us"/>
+                                                        <constraint firstAttribute="width" constant="289" id="gCJ-UE-GoZ"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="0WJ-W3-Gwh" firstAttribute="centerX" secondItem="TYG-6r-LAm" secondAttribute="centerX" type="default" id="K9k-Em-Sti"/>
+                                            <constraint firstItem="0WJ-W3-Gwh" firstAttribute="centerY" secondItem="TYG-6r-LAm" secondAttribute="centerY" type="default" id="S98-UO-Fcc"/>
+                                        </constraints>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="【E】Dで反論をした結果、気持ちはどうなりましたか？（例：イライラが治まった）" footerTitle="入力、お疲れ様でした。AからEまで入力できましたら、「保存」ボタンを押して下さい。" id="tbC-xv-7OY">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ECell" id="0Mj-14-u1D">
+                                        <rect key="frame" x="0.0" y="712" width="320" height="46"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="10" y="1" width="300" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="ECell" translatesAutoresizingMaskIntoConstraints="NO" id="qoZ-hs-bs1">
+                                                    <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="289" id="1eD-e2-StH"/>
+                                                        <constraint firstAttribute="height" constant="32" id="jLq-87-TcN"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="qoZ-hs-bs1" firstAttribute="centerX" secondItem="0Mj-14-u1D" secondAttribute="centerX" type="default" id="fbV-mv-Vur"/>
+                                            <constraint firstItem="qoZ-hs-bs1" firstAttribute="centerY" secondItem="0Mj-14-u1D" secondAttribute="centerY" type="default" id="mVb-nV-wtT"/>
+                                        </constraints>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="ar3-r7-yOE" id="ISJ-gb-C5e"/>
+                            <outlet property="delegate" destination="ar3-r7-yOE" id="sfc-Kn-Z5P"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="新しい記録" id="oPG-Wf-L48">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="giR-Th-a8w">
+                            <connections>
+                                <action selector="saveClicked:" destination="ar3-r7-yOE" id="KOv-in-Kk9"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="aCellTextView" destination="S2c-It-C6p" id="x0a-yP-YlP"/>
+                        <outlet property="bCellTextView" destination="nCs-eE-O9c" id="a84-oT-uU5"/>
+                        <outlet property="cCellTextView" destination="dLf-74-uIa" id="jak-5p-2l5"/>
+                        <outlet property="dCellTextView" destination="0WJ-W3-Gwh" id="yUz-lz-KXz"/>
+                        <outlet property="eCellTextView" destination="qoZ-hs-bs1" id="Y1X-9Z-ewb"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W5r-o6-D6D" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="518" y="-675"/>
         </scene>
         <!--Top Page View Controller - ようこそ-->
         <scene sceneID="mPX-Hp-d7K">
             <objects>
                 <viewController id="Rco-3S-0Dl" customClass="TopPageViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rF2-ha-4Ca">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EiC-up-E4T">
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y5i-G1-4GB">
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                        <state key="normal" title="コラム">
+                                        <state key="normal" title="論理療法コラム">
                                             <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -42,12 +219,59 @@
                                             <segue destination="T0K-BL-nIw" kind="push" id="xkx-lx-kaR"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lCf-nS-kHj">
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="新規で入力する">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="ar3-r7-yOE" kind="push" id="gxd-02-grZ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0pw-Am-6nV">
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="過去の記録を見る">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="y8S-Mn-DLI" kind="push" id="s47-RW-ccw"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoDark" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O2K-5C-2f7">
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="H7m-vk-hKr" kind="push" id="9fP-Gi-Psk"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="O2K-5C-2f7" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="24i-qa-Dms"/>
+                                    <constraint firstAttribute="bottom" secondItem="O2K-5C-2f7" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="86d-BW-oPT"/>
+                                    <constraint firstAttribute="bottom" secondItem="y5i-G1-4GB" secondAttribute="bottom" constant="61" id="8bk-tG-CQW"/>
                                     <constraint firstItem="y5i-G1-4GB" firstAttribute="leading" secondItem="EiC-up-E4T" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="B1M-sr-6ab"/>
-                                    <constraint firstAttribute="bottom" secondItem="y5i-G1-4GB" secondAttribute="bottom" constant="105" id="QiM-qN-AW7"/>
+                                    <constraint firstItem="0pw-Am-6nV" firstAttribute="leading" secondItem="EiC-up-E4T" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="F8c-VB-pnf"/>
+                                    <constraint firstItem="lCf-nS-kHj" firstAttribute="leading" secondItem="EiC-up-E4T" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="PK8-5t-wjE"/>
+                                    <constraint firstAttribute="trailing" secondItem="0pw-Am-6nV" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Slo-tC-R8a"/>
                                     <constraint firstAttribute="trailing" secondItem="y5i-G1-4GB" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="X9Z-dI-xj7"/>
+                                    <constraint firstAttribute="trailing" secondItem="lCf-nS-kHj" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Zvn-em-6Ax"/>
+                                    <constraint firstItem="0pw-Am-6nV" firstAttribute="top" secondItem="lCf-nS-kHj" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="kJM-9Q-9p4"/>
+                                    <constraint firstItem="y5i-G1-4GB" firstAttribute="top" secondItem="0pw-Am-6nV" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="qSJ-Am-bkj"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -63,14 +287,85 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sPj-tS-Gj4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="176" y="-39"/>
+            <point key="canvasLocation" x="141" y="49"/>
+        </scene>
+        <!--Item List View Controller - 記録一覧-->
+        <scene sceneID="BcU-Xr-MY8">
+            <objects>
+                <tableViewController id="y8S-Mn-DLI" customClass="ItemListViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="qPd-7v-z94">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="pBF-Bc-nYq" detailTextLabel="O4q-6F-Crz" style="IBUITableViewCellStyleSubtitle" id="jop-FU-glk">
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pBF-Bc-nYq">
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O4q-6F-Crz">
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <connections>
+                                    <segue destination="DQ9-Cd-Dfs" kind="push" identifier="editItemSegue" id="jH0-OZ-5yG"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="y8S-Mn-DLI" id="NuZ-V2-e8V"/>
+                            <outlet property="delegate" destination="y8S-Mn-DLI" id="U0F-hq-Pjv"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="記録一覧" id="wA4-Yu-78w"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Hm-nC-OLX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="518" y="5"/>
+        </scene>
+        <!--View Controller - このアプリについて-->
+        <scene sceneID="azm-qG-m4D">
+            <objects>
+                <viewController id="H7m-vk-hKr" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4xO-Fo-zzj">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7EE-07-SIk">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="7EE-07-SIk" secondAttribute="bottom" constant="50" id="00I-v6-agO"/>
+                            <constraint firstItem="7EE-07-SIk" firstAttribute="top" secondItem="4xO-Fo-zzj" secondAttribute="top" type="default" id="3xf-tD-lnz"/>
+                            <constraint firstItem="7EE-07-SIk" firstAttribute="leading" secondItem="4xO-Fo-zzj" secondAttribute="leading" type="default" id="WAd-fG-d6L"/>
+                            <constraint firstItem="7EE-07-SIk" firstAttribute="trailing" secondItem="4xO-Fo-zzj" secondAttribute="trailing" type="default" id="WQY-HW-7yT"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="このアプリについて" id="DAQ-jV-1xy"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JPC-BF-muf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="141" y="705"/>
         </scene>
         <!--Column List Page View Controller - コラム一覧-->
         <scene sceneID="oLv-t8-P65">
             <objects>
                 <viewController id="T0K-BL-nIw" customClass="ColumnListPageViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ChK-HZ-qvg">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3gv-yl-DDA">
@@ -125,14 +420,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ITH-NZ-Q5B" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="518" y="598"/>
+            <point key="canvasLocation" x="518" y="679"/>
         </scene>
         <!--Column Page View Controller - コラム-->
         <scene sceneID="jFA-Xl-8ua">
             <objects>
                 <viewController id="l0k-7O-Dug" customClass="ColumnPageViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ug6-FU-mZY">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Fd-nY-Zml">
@@ -165,10 +460,197 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DKY-cS-R0K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="866" y="598"/>
+            <point key="canvasLocation" x="887" y="679"/>
+        </scene>
+        <!--Edit Item View Controller - 閲覧／修正-->
+        <scene sceneID="FjU-L2-MZm">
+            <objects>
+                <tableViewController id="DQ9-Cd-Dfs" customClass="EditItemViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="ctl-iw-7ih">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <sections>
+                            <tableViewSection headerTitle="修正する際は、AからEまで入力後、「保存」ボタンを押して下さい。" id="3QM-Er-Aoc">
+                                <cells/>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="【A】どのような出来事がありましたか？（例：電車で子供が騒いでいた）" id="x3a-ZB-M4H">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ACell" id="CcB-I2-CfJ">
+                                        <rect key="frame" x="0.0" y="155" width="320" height="46"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="10" y="1" width="300" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="ACell" translatesAutoresizingMaskIntoConstraints="NO" id="s8M-mg-I0S">
+                                                    <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="32" id="ZGr-py-HNC"/>
+                                                        <constraint firstAttribute="width" constant="289" id="fpo-58-L2M"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="s8M-mg-I0S" firstAttribute="top" secondItem="CcB-I2-CfJ" secondAttribute="top" constant="6" id="cZ3-rP-L1u"/>
+                                            <constraint firstItem="s8M-mg-I0S" firstAttribute="centerX" secondItem="CcB-I2-CfJ" secondAttribute="centerX" type="default" id="m2m-z1-Z9H"/>
+                                        </constraints>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="【C】Aの出来事に対して、どのような感情が沸きましたか？（例：イライラした）" id="0b7-PH-l2E">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CCell" id="efI-Sb-ZKh">
+                                        <rect key="frame" x="0.0" y="289" width="320" height="46"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="10" y="1" width="300" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="CCell" translatesAutoresizingMaskIntoConstraints="NO" id="fSF-wl-XmJ">
+                                                    <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="289" id="eGx-uF-P65"/>
+                                                        <constraint firstAttribute="height" constant="32" id="vCw-oT-YrZ"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="fSF-wl-XmJ" firstAttribute="centerY" secondItem="efI-Sb-ZKh" secondAttribute="centerY" type="default" id="5rf-Vh-bOp"/>
+                                            <constraint firstItem="fSF-wl-XmJ" firstAttribute="centerX" secondItem="efI-Sb-ZKh" secondAttribute="centerX" type="default" id="Cgv-V6-Jt9"/>
+                                        </constraints>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="【B】Cのように感じた理由を考えてみましょう。（例：電車内では静かにしているべきだから）" id="oYq-OK-ybG">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="BCell" id="Zmh-ts-sQu">
+                                        <rect key="frame" x="0.0" y="423" width="320" height="46"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="10" y="1" width="300" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="BCell" translatesAutoresizingMaskIntoConstraints="NO" id="aBu-6P-OBm">
+                                                    <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="289" id="Hcc-te-Tyx"/>
+                                                        <constraint firstAttribute="height" constant="32" id="j97-fA-lTQ"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="aBu-6P-OBm" firstAttribute="centerY" secondItem="Zmh-ts-sQu" secondAttribute="centerY" type="default" id="a0R-B5-GR0"/>
+                                            <constraint firstItem="aBu-6P-OBm" firstAttribute="centerX" secondItem="Zmh-ts-sQu" secondAttribute="centerX" type="default" id="wyB-qz-olt"/>
+                                        </constraints>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="【D】Bで書いた理由に反論してみましょう。（例：子供はうるさいものだから仕方ない。元気な方がかわいい。）" id="Erw-OA-nBS">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="DCell" id="ARU-1i-aeI">
+                                        <rect key="frame" x="0.0" y="578" width="320" height="46"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="10" y="1" width="300" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="DCell" translatesAutoresizingMaskIntoConstraints="NO" id="lT4-9y-t10">
+                                                    <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="32" id="UxC-iC-hE9"/>
+                                                        <constraint firstAttribute="width" constant="289" id="oRh-04-hdX"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="lT4-9y-t10" firstAttribute="centerX" secondItem="ARU-1i-aeI" secondAttribute="centerX" type="default" id="LKl-EB-VJC"/>
+                                            <constraint firstItem="lT4-9y-t10" firstAttribute="centerY" secondItem="ARU-1i-aeI" secondAttribute="centerY" type="default" id="sFr-uO-jaR"/>
+                                        </constraints>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="【E】Dで反論をした結果、気持ちはどうなりましたか？（例：イライラが治まった）" footerTitle="入力、お疲れ様でした。AからEまで入力できましたら、「保存」ボタンを押して下さい。" id="XhP-E1-fLJ">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ECell" id="025-Av-vK7">
+                                        <rect key="frame" x="0.0" y="712" width="320" height="46"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="10" y="1" width="300" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="ECell" translatesAutoresizingMaskIntoConstraints="NO" id="eOC-ES-iwY">
+                                                    <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="289" id="rZK-QR-qEb"/>
+                                                        <constraint firstAttribute="height" constant="32" id="ujb-7J-W9d"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="eOC-ES-iwY" firstAttribute="centerY" secondItem="025-Av-vK7" secondAttribute="centerY" type="default" id="Ufc-ZQ-JAi"/>
+                                            <constraint firstItem="eOC-ES-iwY" firstAttribute="centerX" secondItem="025-Av-vK7" secondAttribute="centerX" type="default" id="bjE-UP-hZp"/>
+                                        </constraints>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="DQ9-Cd-Dfs" id="OZl-3W-0Dm"/>
+                            <outlet property="delegate" destination="DQ9-Cd-Dfs" id="sSo-FN-UP3"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="閲覧／修正" id="at3-i3-vAb">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="GET-cM-pMR">
+                            <connections>
+                                <action selector="saveClicked:" destination="DQ9-Cd-Dfs" id="cga-nj-sj2"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="aCellTextView" destination="s8M-mg-I0S" id="goF-kP-jPU"/>
+                        <outlet property="bCellTextView" destination="aBu-6P-OBm" id="NMC-yw-ZxN"/>
+                        <outlet property="cCellTextView" destination="fSF-wl-XmJ" id="Jn3-fz-Vbi"/>
+                        <outlet property="dCellTextView" destination="lT4-9y-t10" id="TTt-54-DrW"/>
+                        <outlet property="eCellTextView" destination="eOC-ES-iwY" id="l9j-c2-XCM"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FTF-Ft-ZeZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="911" y="5"/>
         </scene>
     </scenes>
     <classes>
+        <class className="AddItemViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AddItemViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="aCellTextView" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="bCellTextView" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="cCellTextView" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="dCellTextView" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="eCellTextView" candidateClass="UITextView"/>
+            </relationships>
+        </class>
         <class className="ColumnListPageViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ColumnListPageViewController.h"/>
             <relationships>
@@ -181,6 +663,19 @@
                 <relationship kind="outlet" name="columWebView" candidateClass="UIWebView"/>
             </relationships>
         </class>
+        <class className="EditItemViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/EditItemViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="aCellTextView" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="bCellTextView" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="cCellTextView" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="dCellTextView" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="eCellTextView" candidateClass="UITextView"/>
+            </relationships>
+        </class>
+        <class className="ItemListViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ItemListViewController.h"/>
+        </class>
         <class className="NSLayoutConstraint" superclassName="NSObject">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
         </class>
@@ -191,6 +686,6 @@
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
+        <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
 </document>

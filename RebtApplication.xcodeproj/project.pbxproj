@@ -24,6 +24,12 @@
 		A5402A2916269A8C00ED2FDD /* column1.html in Resources */ = {isa = PBXBuildFile; fileRef = A5402A2816269A8C00ED2FDD /* column1.html */; };
 		A5402A2F16269CEE00ED2FDD /* ColumnListPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5402A2E16269CEE00ED2FDD /* ColumnListPageViewController.m */; };
 		A5402A321626A69700ED2FDD /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5402A301626A68F00ED2FDD /* iAd.framework */; };
+		A59CD20E162E392F00025B36 /* AddItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A59CD20D162E392F00025B36 /* AddItemViewController.m */; };
+		A59CD215162E654D00025B36 /* ItemListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A59CD214162E654D00025B36 /* ItemListViewController.m */; };
+		A59CD218162E8D5A00025B36 /* EditItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A59CD217162E8D5A00025B36 /* EditItemViewController.m */; };
+		A59CD21D162EA1D100025B36 /* libNendAd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A59CD21A162EA1D100025B36 /* libNendAd.a */; };
+		A59CD21E162EA1D100025B36 /* libNendAd_readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = A59CD21B162EA1D100025B36 /* libNendAd_readme.txt */; };
+		A59CD220162EA1FE00025B36 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A59CD21F162EA1FE00025B36 /* Security.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +57,16 @@
 		A5402A2E16269CEE00ED2FDD /* ColumnListPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ColumnListPageViewController.m; path = ../ColumnListPageViewController.m; sourceTree = "<group>"; };
 		A5402A301626A68F00ED2FDD /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 		A59CD20B162E1C3700025B36 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A59CD20C162E392F00025B36 /* AddItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddItemViewController.h; path = ../AddItemViewController.h; sourceTree = "<group>"; };
+		A59CD20D162E392F00025B36 /* AddItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddItemViewController.m; path = ../AddItemViewController.m; sourceTree = "<group>"; };
+		A59CD213162E654D00025B36 /* ItemListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemListViewController.h; sourceTree = "<group>"; };
+		A59CD214162E654D00025B36 /* ItemListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemListViewController.m; sourceTree = "<group>"; };
+		A59CD216162E8D5A00025B36 /* EditItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditItemViewController.h; sourceTree = "<group>"; };
+		A59CD217162E8D5A00025B36 /* EditItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditItemViewController.m; sourceTree = "<group>"; };
+		A59CD21A162EA1D100025B36 /* libNendAd.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libNendAd.a; sourceTree = "<group>"; };
+		A59CD21B162EA1D100025B36 /* libNendAd_readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = libNendAd_readme.txt; sourceTree = "<group>"; };
+		A59CD21C162EA1D100025B36 /* NADView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NADView.h; sourceTree = "<group>"; };
+		A59CD21F162EA1FE00025B36 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +74,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A59CD220162EA1FE00025B36 /* Security.framework in Frameworks */,
 				A54029FB16268E6E00ED2FDD /* UIKit.framework in Frameworks */,
 				A54029FD16268E6E00ED2FDD /* Foundation.framework in Frameworks */,
 				A54029FF16268E6E00ED2FDD /* CoreGraphics.framework in Frameworks */,
 				A5402A0116268E6E00ED2FDD /* CoreData.framework in Frameworks */,
 				A5402A321626A69700ED2FDD /* iAd.framework in Frameworks */,
+				A59CD21D162EA1D100025B36 /* libNendAd.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +90,8 @@
 		A54029EB16268E6E00ED2FDD = {
 			isa = PBXGroup;
 			children = (
+				A59CD21F162EA1FE00025B36 /* Security.framework */,
+				A59CD219162EA1D100025B36 /* NendAd */,
 				A5402A0216268E6E00ED2FDD /* RebtApplication */,
 				A54029F916268E6E00ED2FDD /* Frameworks */,
 				A54029F716268E6E00ED2FDD /* Products */,
@@ -112,6 +132,12 @@
 				A5402A2E16269CEE00ED2FDD /* ColumnListPageViewController.m */,
 				A5402A251626970700ED2FDD /* ColumnPageViewController.h */,
 				A5402A261626970700ED2FDD /* ColumnPageViewController.m */,
+				A59CD20C162E392F00025B36 /* AddItemViewController.h */,
+				A59CD20D162E392F00025B36 /* AddItemViewController.m */,
+				A59CD213162E654D00025B36 /* ItemListViewController.h */,
+				A59CD214162E654D00025B36 /* ItemListViewController.m */,
+				A59CD216162E8D5A00025B36 /* EditItemViewController.h */,
+				A59CD217162E8D5A00025B36 /* EditItemViewController.m */,
 				A5402A2816269A8C00ED2FDD /* column1.html */,
 			);
 			path = RebtApplication;
@@ -129,6 +155,16 @@
 				A5402A1216268E6F00ED2FDD /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A59CD219162EA1D100025B36 /* NendAd */ = {
+			isa = PBXGroup;
+			children = (
+				A59CD21A162EA1D100025B36 /* libNendAd.a */,
+				A59CD21B162EA1D100025B36 /* libNendAd_readme.txt */,
+				A59CD21C162EA1D100025B36 /* NADView.h */,
+			);
+			path = NendAd;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,6 +226,7 @@
 				A5402A1316268E6F00ED2FDD /* Default-568h@2x.png in Resources */,
 				A5402A1D16268EB900ED2FDD /* MainStoryboard.storyboard in Resources */,
 				A5402A2916269A8C00ED2FDD /* column1.html in Resources */,
+				A59CD21E162EA1D100025B36 /* libNendAd_readme.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,6 +243,9 @@
 				A5402A20162691B700ED2FDD /* TopPageViewController.m in Sources */,
 				A5402A271626970700ED2FDD /* ColumnPageViewController.m in Sources */,
 				A5402A2F16269CEE00ED2FDD /* ColumnListPageViewController.m in Sources */,
+				A59CD20E162E392F00025B36 /* AddItemViewController.m in Sources */,
+				A59CD215162E654D00025B36 /* ItemListViewController.m in Sources */,
+				A59CD218162E8D5A00025B36 /* EditItemViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +317,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RebtApplication/RebtApplication-Prefix.pch";
 				INFOPLIST_FILE = "RebtApplication/RebtApplication-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/NendAd\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -288,6 +332,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RebtApplication/RebtApplication-Prefix.pch";
 				INFOPLIST_FILE = "RebtApplication/RebtApplication-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/NendAd\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

@@ -7,11 +7,21 @@
 //
 
 #import <UIKit/UIKit.h>
-//#import <iAd/iAd.h>
 
-//@interface TopPageViewController : UIViewController<ADBannerViewDelegate> {
-@interface TopPageViewController : UIViewController {
-    //ADBannerView *adView;
+#import <iAd/iAd.h>
+#import "NADView.h"
+
+@interface TopPageViewController : UIViewController<ADBannerViewDelegate, NADViewDelegate> {
+    //iAd
+    ADBannerView *adView;
+    BOOL iAdBannerIsVisible;
+    
+    //nand
+    NADView *nadView;
+    BOOL nandBannerIsVisible;
 }
+
+@property (nonatomic, assign) BOOL iAdBannerIsVisible;
+@property (nonatomic, assign) BOOL nandBannerIsVisible;
     
 @end
