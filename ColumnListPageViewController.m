@@ -57,11 +57,11 @@
 
 // returns the # of rows in each component..
 - (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component {
-    return 2;
+    return 3;
 }
 
 - (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component {
-    NSString *titles[] = {@"1. 論理療法について", @"1. 論理療法について"};
+    NSString *titles[] = {@"1. 論理療法について", @"2. アサーティブになる", @"3. 論理療法のABC理論"};
     return titles[row];
 }
 

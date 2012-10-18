@@ -48,4 +48,9 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)webButtonClicked:(id)sender {
+    NSURL *url = [NSURL URLWithString:@"http://www.mnj-tokorozawa.jp/"];
+    [[UIApplication sharedApplication] openURL:url];
+}
+
 @end
