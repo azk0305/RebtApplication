@@ -206,7 +206,16 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EiC-up-E4T">
                                 <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="2x.png" translatesAutoresizingMaskIntoConstraints="NO" id="eyD-tl-3AX">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="416" id="05v-kM-tS7"/>
+                                        </constraints>
+                                    </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y5i-G1-4GB">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="C2W-P6-G5B"/>
+                                            <constraint firstAttribute="width" constant="125" id="RPF-ev-Thb"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                         <state key="normal" title="論理療法コラム">
                                             <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -220,6 +229,9 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lCf-nS-kHj">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="6lg-HG-1Rx"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                         <state key="normal" title="新規で入力する">
                                             <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -233,6 +245,9 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0pw-Am-6nV">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="mtU-Tf-GT8"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                         <state key="normal" title="過去の記録を見る">
                                             <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -245,10 +260,13 @@
                                             <segue destination="y8S-Mn-DLI" kind="push" id="s47-RW-ccw"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoDark" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O2K-5C-2f7">
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                        <state key="normal">
-                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O2K-5C-2f7">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="125" id="8u2-Dc-oaI"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" size="button"/>
+                                        <state key="normal" title="About">
+                                            <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <state key="highlighted">
@@ -261,17 +279,20 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="O2K-5C-2f7" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="24i-qa-Dms"/>
-                                    <constraint firstAttribute="bottom" secondItem="O2K-5C-2f7" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="86d-BW-oPT"/>
-                                    <constraint firstAttribute="bottom" secondItem="y5i-G1-4GB" secondAttribute="bottom" constant="61" id="8bk-tG-CQW"/>
+                                    <constraint firstItem="0pw-Am-6nV" firstAttribute="top" secondItem="lCf-nS-kHj" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="2mQ-9V-gRh"/>
+                                    <constraint firstItem="eyD-tl-3AX" firstAttribute="leading" secondItem="EiC-up-E4T" secondAttribute="leading" type="default" id="AqA-gG-5wE"/>
                                     <constraint firstItem="y5i-G1-4GB" firstAttribute="leading" secondItem="EiC-up-E4T" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="B1M-sr-6ab"/>
+                                    <constraint firstItem="O2K-5C-2f7" firstAttribute="top" secondItem="0pw-Am-6nV" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="CD1-Lg-Ewl"/>
                                     <constraint firstItem="0pw-Am-6nV" firstAttribute="leading" secondItem="EiC-up-E4T" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="F8c-VB-pnf"/>
                                     <constraint firstItem="lCf-nS-kHj" firstAttribute="leading" secondItem="EiC-up-E4T" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="PK8-5t-wjE"/>
                                     <constraint firstAttribute="trailing" secondItem="0pw-Am-6nV" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Slo-tC-R8a"/>
-                                    <constraint firstAttribute="trailing" secondItem="y5i-G1-4GB" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="X9Z-dI-xj7"/>
+                                    <constraint firstItem="eyD-tl-3AX" firstAttribute="top" secondItem="EiC-up-E4T" secondAttribute="top" type="default" id="XNQ-um-zlq"/>
                                     <constraint firstAttribute="trailing" secondItem="lCf-nS-kHj" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Zvn-em-6Ax"/>
-                                    <constraint firstItem="0pw-Am-6nV" firstAttribute="top" secondItem="lCf-nS-kHj" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="kJM-9Q-9p4"/>
-                                    <constraint firstItem="y5i-G1-4GB" firstAttribute="top" secondItem="0pw-Am-6nV" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="qSJ-Am-bkj"/>
+                                    <constraint firstAttribute="bottom" secondItem="O2K-5C-2f7" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="mzz-MD-dgf"/>
+                                    <constraint firstItem="eyD-tl-3AX" firstAttribute="trailing" secondItem="EiC-up-E4T" secondAttribute="trailing" type="default" id="paE-Qw-4XA"/>
+                                    <constraint firstAttribute="bottom" secondItem="y5i-G1-4GB" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="r1I-cn-bJX"/>
+                                    <constraint firstItem="y5i-G1-4GB" firstAttribute="top" secondItem="0pw-Am-6nV" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="uXw-oE-OvF"/>
+                                    <constraint firstAttribute="trailing" secondItem="O2K-5C-2f7" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="uhA-sD-or8"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -640,6 +661,9 @@
             <point key="canvasLocation" x="911" y="5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="2x.png" width="640" height="832"/>
+    </resources>
     <classes>
         <class className="AddItemViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/AddItemViewController.h"/>
@@ -666,6 +690,7 @@
         <class className="EditItemViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/EditItemViewController.h"/>
             <relationships>
+                <relationship kind="action" name="saveClicked:"/>
                 <relationship kind="outlet" name="aCellTextView" candidateClass="UITextView"/>
                 <relationship kind="outlet" name="bCellTextView" candidateClass="UITextView"/>
                 <relationship kind="outlet" name="cCellTextView" candidateClass="UITextView"/>
