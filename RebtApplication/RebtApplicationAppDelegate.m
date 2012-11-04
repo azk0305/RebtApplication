@@ -27,7 +27,18 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    //self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
+    NSString *osVersion = [[UIDevice currentDevice] systemVersion];
+    UIStoryboard *mainStoryboard;
+    if([osVersion compare:@"6.0" options:NSNumericSearch] != NSOrderedAscending) {
+        mainStoryboard = [UIStoryboard storyboardWithName:@"MainStoryboard" bundle:nil];
+    } else {
+        mainStoryboard = [UIStoryboard storyboardWithName:@"MainStoryboard_ios5" bundle:nil];
+    }
+    
+    self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
+    
+    TopPageViewController *controller = [mainStoryboard instantiateInitialViewController];
+    self.window.rootViewController = controller;
     
     // Override point for customization after application launch.
     //UINavigationController *navigationController = (UINavigationController *)self.window.rootViewController;
